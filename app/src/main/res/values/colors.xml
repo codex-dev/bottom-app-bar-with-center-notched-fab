@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="top">#5A67EF</color>
+    <color name="all_branches_bg">#F2F4F8</color>
+    <color name="tab">#EEEEEE</color>
+    <color name="list_bg">#FCFCFC</color>
+    <color name="bottom_app_bar_icon">#636A88</color>
+</resources>

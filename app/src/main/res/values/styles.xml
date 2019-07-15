@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- https://stackoverflow.com/a/50828173 -->
+    <style name="AppTheme" parent="Base.Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- disable action bar since another action bar is setting up programmatically -->
+        <!--<item name="windowActionBar">false</item>-->
+        <!--<item name="windowNoTitle">true</item>-->
+    </style>
+
+</resources>
