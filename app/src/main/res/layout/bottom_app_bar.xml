@@ -19,8 +19,7 @@
         app:fabCradleRoundedCornerRadius="10dp"
         app:hideOnScroll="false"
         app:itemIconTint="@android:color/black"
-        app:itemTextColor="@android:color/black"
-        app:menu="@menu/bottom_nav_menu">
+        app:itemTextColor="@android:color/black">
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
