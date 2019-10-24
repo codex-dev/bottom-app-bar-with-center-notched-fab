@@ -34,6 +34,7 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/iv_earning"
                     android:layout_width="match_parent"
                     android:layout_height="25dp"
                     android:src="@drawable/ic_earning"
@@ -43,7 +44,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Earning"
+                    android:text="Spending"
                     android:textColor="@color/bottom_app_bar_icon" />
             </LinearLayout>
 
@@ -55,6 +56,7 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/iv_history"
                     android:layout_width="match_parent"
                     android:layout_height="25dp"
                     android:src="@drawable/ic_history"
@@ -83,7 +85,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Home"
+                    android:text="Pay"
                     android:textColor="@color/bottom_app_bar_icon" />
             </LinearLayout>
 
@@ -95,16 +97,17 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/iv_agent"
                     android:layout_width="match_parent"
                     android:layout_height="25dp"
-                    android:src="@drawable/ic_agent"
+                    android:src="@drawable/ic_deals"
                     android:tint="@color/bottom_app_bar_icon" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Agent"
+                    android:text="Deals"
                     android:textColor="@color/bottom_app_bar_icon" />
             </LinearLayout>
 
@@ -116,16 +119,17 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/iv_deals"
                     android:layout_width="match_parent"
                     android:layout_height="25dp"
-                    android:src="@drawable/ic_deals"
+                    android:src="@drawable/ic_agent"
                     android:tint="@color/bottom_app_bar_icon" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="iAds"
+                    android:text="More"
                     android:textColor="@color/bottom_app_bar_icon" />
             </LinearLayout>
         </LinearLayout>
@@ -137,7 +141,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_home"
-        app:backgroundTint="#FF4182E8"
+        app:backgroundTint="@color/tab"
+        android:tint="@color/bottom_app_bar_icon"
         app:fabSize="normal"
         app:layout_anchor="@id/bottomAppBar" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

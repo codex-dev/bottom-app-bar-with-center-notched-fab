@@ -3,9 +3,9 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="top">#5A67EF</color>
-    <color name="all_branches_bg">#F2F4F8</color>
-    <color name="tab">#EEEEEE</color>
+    <color name="fab_bg">#29B6F6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="tab">#424242</color>
     <color name="list_bg">#FCFCFC</color>
-    <color name="bottom_app_bar_icon">#636A88</color>
+    <color name="bottom_app_bar_icon">#BDBDBD</color>
 </resources>
