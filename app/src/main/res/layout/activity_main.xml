@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bottom_app_bar_icon"
     tools:context=".MainActivity">
 
-    <!--<include layout="@layout/sample_content" />-->
-    <include layout="@layout/bottom_app_bar" />
+    <!--    <include layout="@layout/sample_content" />-->
 
+    <!--    <android.support.v4.view.ViewPager-->
+    <!--        android:id="@+id/viewpager"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+
+    <include layout="@layout/bottom_app_bar" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

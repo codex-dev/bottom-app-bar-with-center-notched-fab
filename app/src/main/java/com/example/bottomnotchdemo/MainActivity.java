@@ -1,16 +1,17 @@
 package com.example.bottomnotchdemo;
 
-import android.graphics.PorterDuff;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().setTitle("iPay");
 
         babEarning = findViewById(R.id.bab_icon_earning);
         ivEarning = findViewById(R.id.iv_earning);
@@ -38,6 +40,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         fabHome.setOnClickListener(this);
         babAgent.setOnClickListener(this);
         babDeals.setOnClickListener(this);
+
+//        ViewPager viewPager = findViewById(R.id.viewpager);
+        BottomAppBar bottomAppBar = findViewById(R.id.bottomAppBar);
+
     }
 
     @Override
@@ -90,6 +96,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 ivDeals.setColorFilter(ContextCompat.getColor(this, R.color.fab_bg), android.graphics.PorterDuff.Mode.SRC_IN);
                 break;
         }
-        Toast.makeText(MainActivity.this, txt, Toast.LENGTH_SHORT).show();
+
+        Snackbar snackbar = Snackbar.make(findViewById(R.id.container), "Clicked \"" + txt + "\"", Snackbar.LENGTH_LONG);
+        snackbar.setAction("Hide", view1 -> snackbar.dismiss());
+        snackbar.setActionTextColor(Color.GREEN);
+        snackbar.getView().setBackground(ContextCompat.getDrawable(this, R.drawable.bg_snackbar));
+        snackbar.show();
     }
 }
